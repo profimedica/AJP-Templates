@@ -1,4 +1,4 @@
-# Get Smarter. Use templates
+### Get Smarter. Use templates
 
 Why are you spending time on predictible fragments of code? Often happened to paste some code and replace few variables?
 
