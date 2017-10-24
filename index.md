@@ -12,16 +12,16 @@ We can make a better world by sharing. I am happy to include your templates in t
 
 # Write your own templates
 
-Here is a simple template. You can paste this template [here](https://profimedica.github.io/Templater/Advanced/index.html).
+Here is a simple template. You can paste it [here](https://profimedica.github.io/Templater/Advanced/index.html) to play with it.
 
 ```
 ================= Vars begin
 {
 	"Greetings" : 
 	[
-    { "word" : "World" },
-    { "word" : "There" },
-    { "word" : "Kitty" }
+	    { "word" : "World" },
+	    { "word" : "There" },
+	    { "word" : "Kitty" }
 	]
 }
 ================= Vars end
@@ -31,7 +31,7 @@ Hello @{word}@!
 ===========!
 ```
 
-For each word in Greetings a new line will be generate resulting in:
+For each word in Greetings a new line will be generated resulting in:
 
 ```
 Hello World!
