@@ -33,8 +33,32 @@ Hello @{word}@!
 
 For each word in Greetings a new line will be generate resulting in:
 
-+Hello World!
+```
+Hello World!
+Hello There!
+Hello Kitty!
+```
 
-+Hello There!
+# Anathomy of a template
+```
+================= Vars begin
+Variables_Section
+================= Vars end
+Template_Body
+```
 
-+Hello Kitty!
+The Template_Body can contain 
+
+''Foreach_Blocks'' acts as foreach statements. They will create a Code_Fragment for each item of the BlockName array found in Variables_Section.
+
+```
+!=========== BlockName ===========
+Template_Body
+===========!
+```
+
+''Variable_Placeholders'' act as variables. In each Code_Fragment they will be replaced with the value of the named property.
+
+```
+@{VariableName}@
+```
