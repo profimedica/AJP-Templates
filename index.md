@@ -1,37 +1,40 @@
-## Welcome to GitHub Pages
+## Get Smarter. Use templates
 
-You can use the [editor on GitHub](https://github.com/profimedica/AJP-Templates/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Why are you spending time on predictible fragments of code? Often happened to paste some code and replace few variables?
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Now you can create a template and save it for later or share it with others. Make it simple and usefull!
 
-### Markdown
+Writting good templates makes you a better developer. Great minds develops simple solutions.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Download for free
 
-```markdown
-Syntax highlighted code block
+We can make a better world by sharing. I am happy to include your templates in this library. I can help you write your first templates. Using templates is addictive, like speacking a foreign language. You can't leave without templates! 
 
-# Header 1
-## Header 2
-### Header 3
+# Write your own templates
 
-- Bulleted
-- List
+Here is a simple template. You can paste this template [here](https://profimedica.github.io/Templater/Advanced/index.html).
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+================= Vars begin
+{
+	"Greetings" : 
+	[
+    { "word" : "World" },
+    { "word" : "There" },
+    { "word" : "Kitty" }
+	]
+}
+================= Vars end
+		
+!=========== Greetings ===========
+Hello @{word}@!
+===========!
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+For each word in Greetings a new line will be generate resulting in:
 
-### Jekyll Themes
++Hello World!
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/profimedica/AJP-Templates/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
++Hello There!
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
++Hello Kitty!
